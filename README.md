@@ -1,96 +1,110 @@
-# Academic Pages
-**Academic Pages is a GitHub Pages template for personal and professional portfolio-oriented websites.**
+# Eunji Woo · Academic website
 
-![Academic Pages template example](images/homepage.png "Academic Pages template example")
+Personal academic site using the existing **Academic Pages / Jekyll** template.
+Production configuration: `https://ooungy.github.io`, repository
+`ooungy/ooungy.github.io`, empty `baseurl`. No framework migration.
 
-# Getting Started
+## Preview and validate
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Click the "Use this template" button in the top right.
-1. On the "New repository" page, enter your public repository name as "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and add your content.
-1. Upload any files (like PDFs, .zip files, etc.) to the `files/` directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
-
-See more info at https://academicpages.github.io/
-
-## Running locally
-
-When you are initially working on your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
-
-1. Clone the repository and made updates as detailed above.
-
-### Using a different IDE
-1. Make sure you have ruby-dev, bundler, and nodejs installed
-    
-    On most Linux distribution and [Windows Subsystem Linux](https://learn.microsoft.com/en-us/windows/wsl/about) the command is:
-    ```bash
-    sudo apt install ruby-dev ruby-bundler nodejs
-    ```
-    If you see error `Unable to locate package ruby-bundler`, `Unable to locate package nodejs `, run the following:
-    ```bash
-    sudo apt update && sudo apt upgrade -y
-    ```
-    then try run `sudo apt install ruby-dev ruby-bundler nodejs` again.
-
-    On MacOS the commands are:
-    ```bash
-    brew install ruby
-    brew install node
-    gem install bundler
-    ```
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-
-    If you see file permission error like `Fetching bundler-2.6.3.gem ERROR:  While executing gem (Gem::FilePermissionError) You don't have write permissions for the /var/lib/gems/3.2.0 directory.` or `Bundler::PermissionError: There was an error while trying to write to /usr/local/bin.`
-    Install Gems Locally (Recommended):
-    ```bash
-    bundle config set --local path 'vendor/bundle'
-    ```
-    then try run `bundle install` again. If succeeded, you should see a folder called `vendor` and `.bundle`.
-
-1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
-    You may also try `bundle exec jekyll serve -l -H localhost` to ensure jekyll to use specific dependencies on your own local machine.
-
-If you are running on Linux it may be necessary to install some additional dependencies prior to being able to run locally: `sudo apt install build-essential gcc make`
-
-## Using Docker
-
-Working from a different OS, or just want to avoid installing dependencies? You can use the provided `Dockerfile` to build a container that will run the site for you if you have [Docker](https://www.docker.com/) installed.
-
-You can build and execute the container by running the following command in the repository:
+With Ruby 3.3 and Bundler available:
 
 ```bash
-chmod -R 777 .
-docker compose up
+bundle install
+bundle exec jekyll serve --host 127.0.0.1 --port 4000
 ```
 
-You should now be able to access the website from `localhost:4000`.
+In the prepared Codex cloud environment, activate the retained installation first:
 
-### Using the DevContainer in VS Code
+```bash
+export PATH=/workspace/.cloud-setup/ruby/bin:$PATH
+export BUNDLE_USER_HOME=/workspace/.cloud-setup/bundler
+export BUNDLE_PATH=/workspace/.cloud-setup/gems
+export GEM_SPEC_CACHE=/workspace/.cloud-setup/gem-spec-cache
+cd /workspace/ooungy.github.io
+```
 
-If you are using [Visual Studio Code](https://code.visualstudio.com/) you can use the [Dev Container](https://code.visualstudio.com/docs/devcontainers/containers) that comes with this Repository. Normally VS Code detects that a development coontainer configuration is available and asks you if you want to use the container. If this doesn't happen you can manually start the container by **F1->DevContainer: Reopen in Container**. This restarts your VS Code in the container and automatically hosts your academic page locally on http://localhost:4000. All changes will be updated live to that page after a few seconds.
+Restart Jekyll after editing `_config.yml`. Validate before review:
 
-# Maintenance
+```bash
+JEKYLL_ENV=production bundle exec jekyll build --safe --strict_front_matter
+python3 scripts/check_site.py _site
+```
 
-Bug reports and feature requests to the template should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
+Pull requests run build/link checks and produce a downloadable site artifact.
+The workflow never deploys. JavaScript/npm is not needed for the MVP interface.
 
-This repository was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License (see LICENSE.md). It is currently being maintained by [Robert Zupko](https://github.com/rjzupkoii) and additional maintainers would be welcomed.
+## Update content with Codex
 
-## Bugfixes and enhancements
+Ask Codex: “Create a new branch, update my academic website from the attached
+source material, preserve Academic Pages, run the build and site checks, and
+leave changes for review. Do not invent details or deploy.”
 
-If you have bugfixes and enhancements that you would like to submit as a pull request, you will need to [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) this repository as opposed to using it as a template. This will also allow you to [synchronize your copy](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) of template to your fork as well.
+| Content | Edit here |
+| --- | --- |
+| About, research, contact, selected work | `_pages/about.md` |
+| Name, email, canonical URL, repository | `_config.yml` |
+| Header navigation | `_data/navigation.yml` |
+| Publications | One Markdown file per work in `_publications/` |
+| Projects | One Markdown file per project in `_portfolio/` |
+| Teaching and supervision | `_teaching/`; assistance in `_data/teaching.yml` |
+| CV summary and original PDF | `_pages/cv.md`, `files/eunji-woo-cv.pdf` |
+| Visual styling | `_sass/academic.scss` (layered over Academic Pages) |
 
-Unfortunately, one logistical issue with a template theme like Academic Pages that makes it a little tricky to get bug fixes and updates to the core theme. If you use this template and customize it, you will probably get merge conflicts if you attempt to synchronize. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch.
+Copy an existing publication and change its front matter: `title`, `authors`,
+`venue`, `year`, `sort_year`, `category`, and optional `paper_url`, `details`,
+`status`. Category keys are in `_data/publication_categories.yml`. Set
+`selected: true` to feature it on the homepage. Use `status: Forthcoming` or
+`Under contract` without inventing a year. For undated forthcoming works,
+`sort_year: 9999` places them first. Keep source notes in `source`.
 
----
-<div align="center">
-    
-![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
-[![GitHub contributors](https://img.shields.io/github/contributors/academicpages/academicpages.github.io.svg)](https://github.com/academicpages/academicpages.github.io/graphs/contributors)
-[![GitHub release](https://img.shields.io/github/v/release/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/releases/latest)
-[![GitHub license](https://img.shields.io/github/license/academicpages/academicpages.github.io?color=blue)](https://github.com/academicpages/academicpages.github.io/blob/master/LICENSE)
+Project URLs use `/projects/<filename>/` while preserving `_portfolio/`.
+Use `order` for sorting and `selected: true` for homepage selection. Write the
+project narrative below the front matter. Images are optional: pages look
+complete without them. Put real, permission-cleared images in
+`images/projects/<project>/`, then add:
 
-[![GitHub stars](https://img.shields.io/github/stars/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io)
-[![GitHub forks](https://img.shields.io/github/forks/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/fork)
-</div>
+```yaml
+image: /images/projects/my-project/cover.jpg
+image_alt: "A meaningful description of the photograph"
+image_caption: "Optional caption and credit"
+gallery:
+  - path: /images/projects/my-project/workshop.jpg
+    alt: "Describe what the workshop photograph shows"
+    caption: "Optional caption and credit"
+```
+
+## Source and review notes
+
+Academic content comes from the supplied **우은지 CV (ENG).pdf**. The downloadable
+PDF is the original supplied CV. The site includes 21 publication records,
+six selected projects, and the CV's teaching/supervision history; it is not a
+complete project or invited-talk archive. No stock portrait or invented project
+photographs are used. Personal phone details appear only in the original PDF.
+
+- The CV repeats `10.57698/v19i3.03` for the forthcoming *Digital Creativity*
+  article and the 2025 *International Journal of Design* article. The former
+  has no DOI link until the author verifies it.
+- The CV lists the *Design Works* article as 2023, but its DOI contains 2022.
+  The site preserves the CV's year and supplied DOI; confirm before release.
+- The resource-exchange article title ends “with focus” in the CV; the site
+  retains that wording rather than inventing a missing subtitle.
+- Appointment/teaching dates and forthcoming/under-contract status are as
+  stated in the supplied CV. Update these when the CV changes.
+
+## GitHub Pages, after review
+
+Work is on `feat/eunji-woo-academic-mvp`; nothing is pushed or deployed by this
+implementation. Review and merge only when ready. Live Pages settings could
+not be inspected because this environment denied the GitHub Pages API request.
+For GitHub's native Jekyll publishing, later verify **Settings → Pages → Deploy
+from a branch → master → /(root)** after merging the reviewed work. Do not
+enable deployment from the feature branch just to preview it. If the repository
+already uses an external deployment process, review that configuration before
+changing settings. Build validation here does not publish anything.
+
+The reference `nadiacw.com` could not be fetched under the environment's network
+policy. The MVP follows the requested minimal typography, generous whitespace,
+and understated color direction independently.
+
+Academic Pages / Minimal Mistakes attribution is retained in the footer and
+the existing LICENSE. See upstream Academic Pages for template documentation.

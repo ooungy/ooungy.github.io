@@ -1,0 +1,9 @@
+<li class="publication-entry">
+  <div class="entry-year">{% if publication.status %}{{ publication.status }}{% else %}{{ publication.year }}{% endif %}</div>
+  <div>
+    <h3><a href="{{ publication.url | relative_url }}">{{ publication.title }}</a></h3>
+    <p class="publication-authors">{{ publication.authors | escape | replace: 'Eunji Woo', '<strong>Eunji Woo</strong>' }}</p>
+    <p class="publication-meta"><em>{{ publication.venue }}</em>{% if publication.details %} · {{ publication.details }}{% endif %}</p>
+    {% if publication.paper_url %}<a class="publication-link" href="{{ publication.paper_url }}">Read <span aria-hidden="true">↗</span></a>{% endif %}
+  </div>
+</li>

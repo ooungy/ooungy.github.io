@@ -1,0 +1,7 @@
+<article class="project-entry">
+  {% if project.image %}<a href="{{ project.url | relative_url }}" tabindex="-1" aria-hidden="true"><img class="project-image" src="{{ project.image | relative_url }}" alt="" loading="lazy"></a>{% endif %}
+  <p class="eyebrow">{{ project.period }}</p>
+  <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+  <p>{{ project.summary }}</p>
+  <a class="text-link" href="{{ project.url | relative_url }}">View project <span aria-hidden="true">↗</span></a>
+</article>

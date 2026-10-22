@@ -1,0 +1,10 @@
+- key: books
+  title: Book
+- key: journals
+  title: Journal articles
+- key: conferences
+  title: Conference contributions
+- key: workshops
+  title: Workshop
+- key: professional
+  title: Professional publications

@@ -1,56 +1,89 @@
 ---
+layout: academic
+home: true
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
-author_profile: true
-redirect_from: 
-  - /about/
-  - /about.html
+redirect_from:
+- /about/
+- /about.html
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. Incidentally, these same features make it a great template for anyone that needs to show off a professional template!
 
- You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and Markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+<section class="hero" aria-labelledby="intro-title">
+  <div>
+    <p class="eyebrow">Design research · Community practice</p>
+    <h1 id="intro-title">Eunji Woo</h1>
+    <p class="hero-statement">Designing with<br>local communities.</p>
+    <p class="hero-intro">I study how local actors shape community life through situated, creative action.</p>
+    <a class="text-link" href="#research">Explore my research <span aria-hidden="true">↓</span></a>
+  </div>
+  <aside class="hero-aside" aria-label="Current appointments">
+    <p class="eyebrow">Currently</p>
+    <p><strong>Postdoctoral Fellow</strong><br>Industrial Design, KAIST</p>
+    <p><strong>Part-time Lecturer</strong><br>Underwood International College,<br>Yonsei University</p>
+    <p class="location">Daejeon, Republic of Korea</p>
+    <a href="mailto:eunji.woo@kaist.ac.kr">eunji.woo@kaist.ac.kr</a>
+  </aside>
+</section>
 
-A data-driven personal website
-======
-Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured Markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various Markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+<section id="about" class="home-section" aria-labelledby="about-title">
+  <div class="section-label"><span>01</span><h2 id="about-title">About</h2></div>
+  <div class="section-body prose">
+    <p class="lead">My research examines how local actors function as “diffuse designers” in shaping community life.</p>
+    <p>I develop design methods, tools, and policy models that translate tacit local practices into structured and scalable forms. Through collaborative, field-based research, I work with communities to co-develop and validate these approaches in practice.</p>
+    <p>I received my Ph.D. in Industrial Design from KAIST in 2025. My doctoral research focused on community-anchored customer experiences for local shops, bringing together design processes, technology mediation, facilitation, and policy support.</p>
+    <a class="text-link" href="{{ '/cv/' | relative_url }}">More about my background <span aria-hidden="true">↗</span></a>
+  </div>
+</section>
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your Markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over - just be sure to save the Markdown files! You can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
+<section id="research" class="home-section" aria-labelledby="research-title">
+  <div class="section-label"><span>02</span><h2 id="research-title">Research</h2></div>
+  <div class="section-body">
+    <p class="section-intro">Design as a way to support bottom-up innovation while preserving human agency.</p>
+    <div class="research-grid">
+      <div><h3>Community &amp; local life</h3><p>Local shops as community anchors, neighborhood knowledge, and the creative practices of local actors.</p></div>
+      <div><h3>Methods &amp; participation</h3><p>Co-design, speculative interventions, design facilitation, and policy support developed through field-based collaboration.</p></div>
+      <div><h3>Technology &amp; agency</h3><p>Technology-mediated service experiences and generative AI tools for prototyping co-located social interactions.</p></div>
+    </div>
+  </div>
+</section>
 
-For those users that need more advanced functionality, the template also supports the following popular tools:
-- [MathJax](https://www.mathjax.org/) for mathematical equations
-- [Mermaid](https://mermaid.js.org/) for diagraming
-- [Plotly](https://plotly.com/javascript/) for plotting
+<section id="publications" class="home-section" aria-labelledby="publications-title">
+  <div class="section-label"><span>03</span><h2 id="publications-title">Selected <br>publications</h2></div>
+  <div class="section-body">
+    <ul class="publication-list">
+    {% assign selected_publications = site.publications | where: 'selected', true | sort: 'sort_year' | reverse %}
+    {% for publication in selected_publications %}{% include publication-entry.html %}{% endfor %}
+    </ul>
+    <a class="text-link" href="{{ '/publications/' | relative_url }}">All publications <span aria-hidden="true">→</span></a>
+  </div>
+</section>
 
-Getting started
-======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this template](https://github.com/academicpages/academicpages.github.io) by clicking the "Use this template" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+<section id="projects" class="home-section" aria-labelledby="projects-title">
+  <div class="section-label"><span>04</span><h2 id="projects-title">Selected <br>projects</h2></div>
+  <div class="section-body">
+    <div class="project-grid">
+    {% assign selected_projects = site.portfolio | where: 'selected', true | sort: 'order' %}
+    {% for project in selected_projects %}{% include project-entry.html %}{% endfor %}
+    </div>
+    <a class="text-link" href="{{ '/projects/' | relative_url }}">All projects <span aria-hidden="true">→</span></a>
+  </div>
+</section>
 
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+<section id="teaching" class="home-section" aria-labelledby="teaching-title">
+  <div class="section-label"><span>05</span><h2 id="teaching-title">Teaching</h2></div>
+  <div class="section-body">
+    <p class="section-intro">Service design, social innovation, and community-centered practice.</p>
+    {% assign courses = site.teaching | where: 'category', 'university' | sort: 'order' %}
+    {% for course in courses %}<div class="teaching-row"><div><h3><a href="{{ course.url | relative_url }}">{{ course.title }}</a></h3><p>{{ course.institution }}</p></div><span>{{ course.terms }}</span></div>{% endfor %}
+    <a class="text-link" href="{{ '/teaching/' | relative_url }}">Teaching &amp; supervision <span aria-hidden="true">→</span></a>
+  </div>
+</section>
 
-Create content & metadata
-------
-For site content, there is one Markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a Markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each Markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
-
-**Markdown generator**
-
-The repository includes [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual Markdown files that will be properly formatted for the Academic Pages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the Markdown files, then commit and push them to the GitHub repository.
-
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and Markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
-
-Example: editing a Markdown file for a talk
-![Editing a Markdown file for a talk](/images/editing-talk.png)
-
-For more info
-------
-More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/), the [growing wiki](https://github.com/academicpages/academicpages.github.io/wiki), and you can always [ask a question on GitHub](https://github.com/academicpages/academicpages.github.io/discussions). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+<section id="contact" class="home-section contact-section" aria-labelledby="contact-title">
+  <div class="section-label"><span>06</span><h2 id="contact-title">CV / Contact</h2></div>
+  <div class="section-body">
+    <p class="contact-heading">Get in touch.</p>
+    <p><a class="contact-email" href="mailto:eunji.woo@kaist.ac.kr">eunji.woo@kaist.ac.kr</a></p>
+    <div class="contact-links"><a href="{{ '/files/eunji-woo-cv.pdf' | relative_url }}">Download CV (PDF) <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/ooungy/">LinkedIn <span aria-hidden="true">↗</span></a></div>
+  </div>
+</section>

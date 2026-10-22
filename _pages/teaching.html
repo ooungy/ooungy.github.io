@@ -1,12 +1,21 @@
 ---
-layout: archive
-title: "Teaching"
+title: Teaching
+eyebrow: Learning through design
 permalink: /teaching/
-author_profile: true
+description: University courses, community education, and undergraduate research supervision.
 ---
 
-{% include base_path %}
 
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
+{% for category in site.data.teaching.categories %}
+<section class="listing-section">
+  <h2>{{ category.title }}</h2>
+  {% assign courses = site.teaching | where: 'category', category.key | sort: 'order' %}
+  {% for course in courses %}
+  <div class="teaching-row"><div><h3><a href="{{ course.url | relative_url }}">{{ course.title }}</a></h3><p>{{ course.institution }}{% if course.code %} · {{ course.code }}{% endif %}</p></div><span>{{ course.terms }}</span></div>
+  {% endfor %}
+</section>
 {% endfor %}
+<section class="listing-section"><h2>Teaching assistance</h2>
+<div class="table-scroll"><table><thead><tr><th scope="col">Course</th><th scope="col">Institution</th><th scope="col">Terms</th></tr></thead><tbody>
+{% for course in site.data.teaching.assistance %}<tr><td>{{ course.title }}</td><td>{{ course.institution }}</td><td>{{ course.terms }}</td></tr>{% endfor %}
+</tbody></table></div></section>

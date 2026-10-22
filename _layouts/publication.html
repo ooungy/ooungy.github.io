@@ -1,0 +1,11 @@
+---
+layout: academic
+---
+<div class="detail-content">
+  <p class="publication-authors">{{ page.authors | escape | replace: 'Eunji Woo', '<strong>Eunji Woo</strong>' }}</p>
+  <p class="publication-meta"><em>{{ page.venue }}</em>{% if page.year %} · {{ page.year }}{% endif %}{% if page.status %} · {{ page.status }}{% endif %}</p>
+  {% if page.details %}<p>{{ page.details }}</p>{% endif %}
+  {% if page.paper_url %}<p><a class="text-link" href="{{ page.paper_url }}">Read publication <span aria-hidden="true">↗</span></a></p>{% endif %}
+  {{ content }}
+  <p class="back-link"><a href="{{ '/publications/' | relative_url }}">← All publications</a></p>
+</div>

@@ -1,14 +1,15 @@
 ---
-layout: archive
-title: "Portfolio"
-permalink: /portfolio/
-author_profile: true
+title: Projects
+eyebrow: Research in practice
+permalink: /projects/
+redirect_from:
+- /portfolio/
+description: Selected field-based collaborations, community initiatives, and design
+  interventions.
 ---
 
-{% include base_path %}
 
-
-{% for post in site.portfolio %}
-  {% include archive-single.html %}
-{% endfor %}
-
+<div class="project-grid project-grid--full">
+{% assign projects = site.portfolio | sort: 'order' %}
+{% for project in projects %}{% include project-entry.html %}{% endfor %}
+</div>

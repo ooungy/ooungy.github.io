@@ -1,64 +1,51 @@
 ---
-layout: archive
-title: "CV"
+title: CV / Contact
+eyebrow: Background & appointments
 permalink: /cv/
-author_profile: true
-redirect_from:
-  - /resume
+description: Eunji Woo, Ph.D. · Design researcher · Daejeon, Republic of Korea
 ---
 
-{% include base_path %}
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+<p><a class="button-link" href="{{ '/files/eunji-woo-cv.pdf' | relative_url }}">Download full CV <span class="file-type">PDF ↗</span></a></p>
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+## Appointments
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+| Position | Institution | Period |
+| --- | --- | --- |
+| Postdoctoral Fellow, Industrial Design | KAIST | Sep 2025–present |
+| Part-time Lecturer, Culture and Design Management, Underwood International College | Yonsei University | Jan 2025–present |
+| Visiting Researcher, DLX Design Lab | University of Tokyo | Jan–Feb 2026 |
+| Research Fellow | Daejeon Sejong Research Institute | Jul–Sep 2025 |
+| Researcher, Designize DESIS Lab, Industrial Design | KAIST | Sep 2017–Aug 2025 |
+| Academic Tutor | Korea National Open University | Fall 2023, 2024, 2025 |
+| UX Researcher | Beyond Lab, Golfzon | Jan 2015–Jun 2017 |
+| Intern | Satyendra Pakhalé Design Studio, Amsterdam | Feb–May 2014 |
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+## Education
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+**Ph.D. in Industrial Design · KAIST**<br>
+Sep 2019–Aug 2025<br>
+Thesis: *Designing Community-Anchored Customer Experiences for Local Shops: with a Focus on Design Process, Technology Mediation, Design Facilitation, and Policy Support*
+
+**M.S. in Industrial Design · KAIST**<br>
+Sep 2017–Aug 2019<br>
+Thesis: *Typology of Local Knowledge Handlers and Merchants’ Roles for Community Design*
+
+**B.S. in Industrial Design · KAIST**<br>
+Feb 2009–Feb 2015
+
+**Exchange student · RMIT University, Melbourne**<br>
+Sep–Dec 2013
+
+## Research support
+
+**Jang Young Sil Fellow Program, Postdoctoral Researcher Track**<br>
+KAIST Office of Research Affairs · Sep 2025–Aug 2026
+
+For publications, projects, teaching, talks, and other activities, see the full CV.
+
+<section id="contact" class="cv-contact" aria-labelledby="contact-heading">
+  <h2 id="contact-heading">Contact</h2>
+  <p><a class="contact-email" href="mailto:eunji.woo@kaist.ac.kr">eunji.woo@kaist.ac.kr</a></p>
+  <p>Daejeon, Republic of Korea<br><a href="https://www.linkedin.com/in/ooungy/">LinkedIn ↗</a></p>
+</section>

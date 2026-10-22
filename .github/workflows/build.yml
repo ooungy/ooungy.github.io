@@ -1,0 +1,27 @@
+name: Validate academic website
+
+# Validation only. This workflow has no deployment or write permissions.
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+          bundler-cache: true
+      - run: bundle exec jekyll build --safe --strict_front_matter
+        env:
+          JEKYLL_ENV: production
+      - run: python3 scripts/check_site.py _site
+      - uses: actions/upload-artifact@v4
+        with:
+          name: academic-site-preview
+          path: _site
