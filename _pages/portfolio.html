@@ -9,7 +9,7 @@ description: Selected field-based collaborations, community initiatives, and des
 ---
 
 
-<div class="project-grid project-grid--full">
+<div class="project-list">
 {% assign projects = site.portfolio | sort: 'order' %}
 {% for project in projects %}{% include project-entry.html %}{% endfor %}
 </div>

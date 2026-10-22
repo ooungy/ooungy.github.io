@@ -2,6 +2,12 @@
 
 - [Desktop screenshot](homepage.png)
 - [Mobile screenshot](mobile.png)
+- [Projects page](projects.png)
+- [Publications page](publications.png)
+
+The revised direction uses a short personal introduction, a single reading
+column, serif text, and ordinary links. The homepage contains three selected
+projects and three selected publications. Full content remains in the archives.
 
 For a working preview, download **eunji-woo-preview.zip** using GitHub's
 **Download raw file** button. Extract the ZIP, then double-click

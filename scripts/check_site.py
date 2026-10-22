@@ -83,7 +83,7 @@ def check(site):
     if errors:
         raise AssertionError('\n'.join(errors))
     print(f'PASS: {len(pages)} HTML pages; all local links, assets and anchors resolve.')
-    print(f'PASS: {publication_count} publications, {project_count} projects, six homepage sections, CV PDF, canonical URL, sitemap and feed.')
+    print(f'PASS: {publication_count} publications, {project_count} projects, homepage navigation anchors, CV PDF, canonical URL, sitemap and feed.')
 
 
 if __name__ == '__main__':

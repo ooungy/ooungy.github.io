@@ -1,7 +1,7 @@
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="academic-header">
   <div class="academic-header__inner">
-    <a class="wordmark" href="{{ '/' | relative_url }}">Eunji Woo<span class="wordmark__dot" aria-hidden="true">.</span></a>
+    <a class="site-name" href="{{ '/' | relative_url }}">Eunji Woo</a>
     <nav aria-label="Main navigation">
       {% for link in site.data.navigation.main %}
       <a href="{{ link.url | relative_url }}"{% if page.url == link.url %} aria-current="page"{% endif %}>{{ link.title }}</a>
