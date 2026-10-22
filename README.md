@@ -4,6 +4,11 @@ Personal academic site using the existing **Academic Pages / Jekyll** template.
 Production configuration: `https://ooungy.github.io`, repository
 `ooungy/ooungy.github.io`, empty `baseurl`. No framework migration.
 
+**View the result on this review branch:** [Desktop screenshot](preview/homepage.png)
+· [Mobile screenshot](preview/mobile.png). Download `preview/eunji-woo-preview.zip`,
+extract it, and double-click `Eunji-Woo-Preview.html` for a working self-contained
+preview. No Ruby, Python, or server is needed to view that file.
+
 ## Preview and validate
 
 With Ruby 3.3 and Bundler available:
@@ -93,8 +98,8 @@ photographs are used. Personal phone details appear only in the original PDF.
 
 ## GitHub Pages, after review
 
-Work is on `feat/eunji-woo-academic-mvp`; nothing is pushed or deployed by this
-implementation. Review and merge only when ready. Live Pages settings could
+Work is on `feat/eunji-woo-academic-mvp`; the review branch includes screenshots
+and an offline preview. No website is deployed. Review and merge only when ready. Live Pages settings could
 not be inspected because this environment denied the GitHub Pages API request.
 For GitHub's native Jekyll publishing, later verify **Settings → Pages → Deploy
 from a branch → master → /(root)** after merging the reviewed work. Do not
