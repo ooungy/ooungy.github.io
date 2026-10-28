@@ -5,7 +5,6 @@ summary: Exploring community-anchored customer experiences through speculative d
   intervention.
 order: 6
 selected: false
-source: Provided CV, pp. 3–5
 role: Project Manager
 ---
 

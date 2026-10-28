@@ -4,7 +4,6 @@ institution: Yonsei University
 terms: Spring 2025, 2026
 category: university
 order: 1
-source: Provided CV, pp. 5–6
 code: CDM3001
 ---
 

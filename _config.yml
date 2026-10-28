@@ -3,19 +3,20 @@ locale: en-US
 title: Eunji Woo
 name: Eunji Woo
 title_separator: ·
-description: Eunji Woo — design researcher working with local communities, service
-  experiences, and bottom-up innovation.
+description: Eunji Woo — Research Assistant Professor at PolyU School of Design, working
+  on participatory design, technology-mediated design, stakeholder collaboration,
+  and value creation.
 url: https://ooungy.github.io
 baseurl: ''
 repository: ooungy/ooungy.github.io
 site_theme: default
-timezone: Asia/Seoul
+timezone: Asia/Hong_Kong
 author:
   name: Eunji Woo
-  bio: Design researcher · Community design
-  location: Daejeon, Republic of Korea
-  employer: KAIST
-  email: eunji.woo@kaist.ac.kr
+  bio: Research Assistant Professor · School of Design, PolyU
+  location: Hong Kong
+  employer: The Hong Kong Polytechnic University
+  email: eunji.woo.phd@gmail.com
   linkedin: ooungy
 social:
   type: Person

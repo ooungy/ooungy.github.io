@@ -1,10 +1,9 @@
 ---
-title: Catch the Future Seminar
+title: Department Seminar
 institution: KAIST
 terms: Spring 2026
 category: university
 order: 3
-source: Provided CV, pp. 5–6
 code: ID966
 ---
 

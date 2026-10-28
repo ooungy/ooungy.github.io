@@ -7,13 +7,12 @@ redirect_from:
 - /about.html
 ---
 
-
 <section id="about" class="introduction" aria-labelledby="intro-title">
   <h1 id="intro-title">Eunji Woo</h1>
-  <p>I’m a design researcher based in Daejeon, South Korea. I work with local communities to understand how people shape the places and services around them.</p>
-  <p>I’m a postdoctoral fellow in Industrial Design at KAIST and a part-time lecturer at Yonsei University’s Underwood International College. I received my Ph.D. in Industrial Design from KAIST in 2025. <span id="teaching">I also <a href="{{ '/teaching/' | relative_url }}">teach service design and social innovation</a>.</span></p>
-  <p id="research">My research looks at local actors as “diffuse designers,” especially the role of local shops in community life. I develop methods, tools, and policy models through field-based collaboration. My current work also explores generative AI tools for prototyping service experiences.</p>
-  <p id="contact" class="personal-links"><a href="mailto:eunji.woo@kaist.ac.kr">Email</a> <a href="{{ '/files/eunji-woo-cv.pdf' | relative_url }}">CV (PDF)</a> <a href="https://www.linkedin.com/in/ooungy/">LinkedIn</a></p>
+  <p>I’m a Research Assistant Professor in the School of Design at The Hong Kong Polytechnic University (PolyU), based in Hong Kong since August 2026.</p>
+  <p id="research">I study participatory and technology-mediated design: how stakeholders make their resources and values visible, work together, and create value in communities and early-stage ventures. My recent work explores generative AI as a way to surface different perspectives and support collaboration in community development.</p>
+  <p id="teaching">I’m part of PolyU’s MDes Innovative Business Design programme, focusing on early-stage ventures and design-supported value creation. I received my Ph.D. in Industrial Design from KAIST in 2025. <a href="{{ '/teaching/' | relative_url }}">Teaching</a> · <a href="{{ '/cv/' | relative_url }}">Academic background</a></p>
+  <p id="contact" class="personal-links"><a href="mailto:eunji.woo.phd@gmail.com">Email</a> <a href="{{ '/cv/' | relative_url }}">CV</a> <a href="https://www.linkedin.com/in/ooungy/">LinkedIn</a></p>
 </section>
 
 <section id="projects" class="home-section" aria-labelledby="projects-title">

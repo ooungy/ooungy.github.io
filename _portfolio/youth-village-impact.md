@@ -4,7 +4,6 @@ period: Jan–Mar 2025
 summary: An impact framework for community activities at “Yeogirang” in Daejeon.
 order: 2
 selected: false
-source: Provided CV, pp. 3–5
 role: Project Manager
 ---
 

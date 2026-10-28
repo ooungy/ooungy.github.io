@@ -5,7 +5,6 @@ summary: A cross-sector collaboration designing stools that capture Daejeon’s 
   identity.
 order: 3
 selected: true
-source: Provided CV, pp. 3–5
 role: Project Manager
 ---
 

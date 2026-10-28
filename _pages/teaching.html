@@ -5,13 +5,14 @@ permalink: /teaching/
 description: University courses, community education, and undergraduate research supervision.
 ---
 
+<p>I’m a faculty member in PolyU’s MDes Innovative Business Design programme, focusing on early-stage ventures and design-supported value creation. My previous teaching at Yonsei University included Service Design and Social Innovation for Sustainability.</p>
 
 {% for category in site.data.teaching.categories %}
 <section class="listing-section">
   <h2>{{ category.title }}</h2>
   {% assign courses = site.teaching | where: 'category', category.key | sort: 'order' %}
   {% for course in courses %}
-  <div class="teaching-row"><div><h3><a href="{{ course.url | relative_url }}">{{ course.title }}</a></h3><p>{{ course.institution }}{% if course.code %} · {{ course.code }}{% endif %}</p></div><span>{{ course.terms }}</span></div>
+  <div class="teaching-row"><div><h3><a href="{{ course.url | relative_url }}">{{ course.title }}</a></h3><p>{{ course.institution }}{% if course.programme %} · {{ course.programme }}{% endif %}{% if course.code %} · {{ course.code }}{% endif %}</p></div><span>{{ course.terms }}{% if course.status %} · {{ course.status }}{% endif %}</span></div>
   {% endfor %}
 </section>
 {% endfor %}

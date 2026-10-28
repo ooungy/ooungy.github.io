@@ -5,7 +5,6 @@ venue: Journal of the Korean Society of Design Culture
 category: journals
 sort_year: 2023
 selected: false
-source: Provided CV, pp. 2–3
 year: 2023
 details: 29(4):137–151 · In Korean
 paper_url: https://doi.org/10.18208/ksdc.2023.29.4.137

@@ -5,7 +5,6 @@ authors: Eunji Woo, Chorong Kim, Hyejin Kwon, Yedam Ryu, Youngok Choi, & Ki-Youn
 venue: International Association of Societies of Design Research
 category: conferences
 sort_year: 2023
-selected: true
-source: Provided CV, pp. 2–3
+selected: false
 year: 2023
 ---

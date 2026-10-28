@@ -5,7 +5,6 @@ summary: A problem-solving workshop bringing local shops and their regular custo
   together.
 order: 5
 selected: false
-source: Provided CV, pp. 3–5
 role: Project Manager
 ---
 

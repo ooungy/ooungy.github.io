@@ -4,7 +4,6 @@ institution: KAIST Undergraduate Research Program
 terms: Spring 2023
 category: supervision
 order: 5
-source: Provided CV, pp. 5–6
 ---
 
 **KAIST Undergraduate Research Program · Spring 2023**

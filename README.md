@@ -52,7 +52,7 @@ leave changes for review. Do not invent details or deploy.”
 | Publications | One Markdown file per work in `_publications/` |
 | Projects | One Markdown file per project in `_portfolio/` |
 | Teaching and supervision | `_teaching/`; assistance in `_data/teaching.yml` |
-| CV summary and original PDF | `_pages/cv.md`, `files/eunji-woo-cv.pdf` |
+| CV summary and existing public PDF | `_pages/cv.md`, `files/eunji-woo-cv.pdf` |
 | Visual styling | `_sass/academic.scss` (layered over Academic Pages) |
 
 Copy an existing publication and change its front matter: `title`, `authors`,
@@ -60,7 +60,9 @@ Copy an existing publication and change its front matter: `title`, `authors`,
 `status`. Category keys are in `_data/publication_categories.yml`. Set
 `selected: true` to feature it on the homepage. Use `status: Forthcoming` or
 `Under contract` without inventing a year. For undated forthcoming works,
-`sort_year: 9999` places them first. Keep source notes in `source`.
+`sort_year: 9999` places them first. Use explicit accepted/forthcoming labels;
+never create a public record for an under-review manuscript. Keep private
+source documents and annotations outside the checkout.
 
 Project URLs use `/projects/<filename>/` while preserving `_portfolio/`.
 Use `order` for sorting and `selected: true` for homepage selection. Write the
@@ -80,25 +82,25 @@ gallery:
 
 ## Source and review notes
 
-Academic content comes from the supplied **우은지 CV (ENG).pdf**. The downloadable
-PDF is the original supplied CV. The site includes 21 publication records,
-six selected projects, and the CV's teaching/supervision history; it is not a
-complete project or invited-talk archive. No stock portrait or invented project
-photographs are used. Personal phone details appear only in the original PDF.
+v1.2 updates academic content without changing the v1.1 editorial design.
+The site has 26 publication records, six projects, and teaching/supervision
+history. Accepted and forthcoming work is labeled explicitly. Under-review
+manuscripts are omitted entirely, including their metadata and titles.
 
-- The CV repeats `10.57698/v19i3.03` for the forthcoming *Digital Creativity*
-  article and the 2025 *International Journal of Design* article. The former
-  has no DOI link until the author verifies it.
-- The CV lists the *Design Works* article as 2023, but its DOI contains 2022.
-  The site preserves the CV's year and supplied DOI; confirm before release.
-- The resource-exchange article title ends “with focus” in the CV; the site
-  retains that wording rather than inventing a missing subtitle.
-- Appointment/teaching dates and forthcoming/under-contract status are as
-  stated in the supplied CV. Update these when the CV changes.
+The existing public CV download is unchanged and labeled as an earlier version.
+It does not reflect the current PolyU appointment. Replace it only with a
+separately approved public-facing CV. Do not commit private source PDFs,
+personal phone numbers, dates of birth, grant amounts, or private annotations.
+The refreshed offline preview does not embed or redistribute the old PDF.
+
+Korean-only publication titles have been translated into English; author names
+without confirmed romanizations retain their Korean spelling. SD5138 retains
+the stated term “2026 Semester 2” without inferring delivery status or academic
+year. No project photographs were added.
 
 ## GitHub Pages, after review
 
-Work is on `feat/eunji-woo-academic-mvp`; the review branch includes screenshots
+v1.2 work is on `feat/cv-content-v1.2`; the review branch includes screenshots
 and an offline preview. No website is deployed. Review and merge only when ready. Live Pages settings could
 not be inspected because this environment denied the GitHub Pages API request.
 For GitHub's native Jekyll publishing, later verify **Settings → Pages → Deploy

@@ -5,7 +5,6 @@ venue: Design Management Review
 category: professional
 sort_year: 2019
 selected: false
-source: Provided CV, pp. 2–3
 year: 2019
 details: 30(3):14–21
 paper_url: https://doi.org/10.1111/drev.12184

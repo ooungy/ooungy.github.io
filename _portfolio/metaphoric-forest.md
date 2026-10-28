@@ -5,7 +5,6 @@ summary: A six-month pop-up independent bookstore exploring a prototype for loca
   community-building.
 order: 4
 selected: true
-source: Provided CV, pp. 3–5
 ---
 
 A six-month pop-up independent bookstore exploring a prototype for local community-building.

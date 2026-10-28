@@ -6,7 +6,6 @@ venue: 'Academy for Design Innovation Management 2019: Research Perspectives in 
 category: conferences
 sort_year: 2019
 selected: false
-source: Provided CV, pp. 2–3
 year: 2019
 paper_url: https://hdl.handle.net/10203/263905
 ---
