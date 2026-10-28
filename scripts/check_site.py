@@ -60,7 +60,7 @@ def check(site):
             elif parsed.fragment and target in pages and unquote(parsed.fragment) not in pages[target].ids:
                 errors.append(f'{route}: missing anchor {link}')
     for route in ('index.html', 'publications/index.html', 'projects/index.html',
-                  'teaching/index.html', 'cv/index.html', '404.html'):
+                  'teaching/index.html', 'engagement/index.html', 'cv/index.html', '404.html'):
         path = site / route
         assert path in pages, f'Missing required page: {route}'
         assert pages[path].h1_count == 1, f'{route}: expected exactly one h1'
@@ -73,6 +73,12 @@ def check(site):
     assert publication_count > 0 and project_count > 0, 'Expected real content'
     assert pages[site / 'publications/index.html'].classes['publication-entry'] == publication_count
     assert pages[site / 'projects/index.html'].classes['project-entry'] == project_count
+    engagement_count = sum(line.startswith('- id:')
+                           for data in (source / '_data/engagement').glob('*.yml')
+                           for line in data.read_text().splitlines())
+    assert engagement_count > 0, 'Expected structured engagement records'
+    assert pages[site / 'engagement/index.html'].classes['engagement-entry'] == engagement_count
+    assert {'talks', 'advisory', 'service', 'exhibitions_media'} <= pages[site / 'engagement/index.html'].ids
     assert (site / 'files/eunji-woo-cv.pdf').read_bytes().startswith(b'%PDF-')
     assert (site / 'assets/css/main.css').stat().st_size > 1000
     sitemap = ET.parse(site / 'sitemap.xml')
@@ -83,7 +89,7 @@ def check(site):
     if errors:
         raise AssertionError('\n'.join(errors))
     print(f'PASS: {len(pages)} HTML pages; all local links, assets and anchors resolve.')
-    print(f'PASS: {publication_count} publications, {project_count} projects, homepage navigation anchors, CV PDF, canonical URL, sitemap and feed.')
+    print(f'PASS: {publication_count} publications, {project_count} projects, {engagement_count} engagement records, homepage navigation anchors, CV PDF, canonical URL, sitemap and feed.')
 
 
 if __name__ == '__main__':

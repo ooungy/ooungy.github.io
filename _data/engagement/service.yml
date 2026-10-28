@@ -1,0 +1,30 @@
+- id: design-convergence-review
+  title: Design Convergence Journal
+  period: '2026'
+  sort_date: '2026'
+  role: Reviewer
+  organization: Society of Design Convergence
+- id: adr-review
+  title: Archives of Design Research
+  period: '2026'
+  sort_date: '2026'
+  role: Reviewer
+  organization: Archives of Design Research
+- id: pdc-review
+  title: ACM Participatory Design Conference (PDC)
+  period: '2026'
+  sort_date: '2026'
+  role: Reviewer
+  organization: Participatory Design Conference
+- id: iasdr-review
+  title: International Association of Societies of Design Research (IASDR)
+  period: '2025'
+  sort_date: '2025'
+  role: Reviewer
+  organization: IASDR
+- id: social-impact-sig
+  title: Social Impact SIG
+  period: '2024'
+  sort_date: '2024'
+  role: Secretary
+  organization: Korean Society of Design Science

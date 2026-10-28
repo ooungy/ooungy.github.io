@@ -1,0 +1,4 @@
+<li class="publication-entry engagement-entry" id="{{ activity.id }}">
+  <p class="publication-meta">{{ activity.period }} · {{ activity.role }}</p>
+  <p>{{ activity.title }}{% unless activity.organization == activity.title %} — {{ activity.organization }}{% endunless %}{% if activity.location %}, {{ activity.location }}{% endif %}.{% if activity.link and activity.link_verified == true %} <a href="{{ activity.link }}">{{ activity.link_label | default: 'Read' }}</a>{% endif %}</p>
+</li>

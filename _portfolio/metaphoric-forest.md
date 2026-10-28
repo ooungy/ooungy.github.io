@@ -1,14 +1,15 @@
 ---
 title: Metaphoric Forest
 period: '2023'
-summary: A six-month pop-up independent bookstore exploring a prototype for local
-  community-building.
+theme: entrepreneurship
+tags:
+- local-communities
+summary: A six-month independent-bookstore experiment in community services and local
+  business models.
 order: 4
 selected: true
+role: Co-planner and operator
+organization: Ministry of SMEs and Startups, Local Creator Support Programme
 ---
 
-A six-month pop-up independent bookstore exploring a prototype for local community-building.
-
-Experimented with an offline platform in Yuseong-gu, Daejeon, connecting local stakeholders through knowledge-based content.
-
-Selected for the Local Creator Support Program by the Ministry of SMEs and Startups, Korea.
+Co-planned and operated a locally based independent bookstore. The six-month experiment explored a community-based business model connecting neighborhood shops and a local university.

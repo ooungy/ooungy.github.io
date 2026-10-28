@@ -1,0 +1,112 @@
+- id: dreaming-hen
+  title: Dreaming Hen
+  period: Nov 2025
+  sort_date: 2025-11
+  role: Exhibitor
+  organization: Korean Society of Design Science International Invitational Exhibition,
+    Kyung Hee University Global Campus
+  location: Korea
+  kind: exhibition
+- id: bright-learning
+  title: Bright Learning School Desk
+  period: Dec 2023
+  sort_date: 2023-12
+  role: Exhibitor
+  organization: Korean Society of Design Science International Invitational Exhibition,
+    Hongik University Sejong Campus
+  location: Korea
+  kind: exhibition
+- id: nerd-stool-showcase
+  title: Nerd Stool Project
+  period: Dec 2023
+  sort_date: 2023-12
+  role: Exhibitor
+  organization: Local Branding Living-Lab Showcase, Daejeon Social Innovation Center
+  location: Daejeon, Korea
+  kind: exhibition
+  link: /projects/nerd-stool/
+  link_verified: true
+  link_label: Project
+- id: neighborhood-hero
+  title: Growing Our Neighborhood Heroes
+  period: Dec 2022
+  sort_date: 2022-12
+  role: Exhibitor
+  organization: KAIST–DDP Collaborative Exhibition, Dongdaemun Design Plaza
+  location: Seoul, Korea
+  kind: exhibition
+- id: neb-map
+  title: “Neb” Map
+  period: Nov 2019
+  sort_date: 2019-11
+  role: Exhibitor
+  organization: Neologism Archive Exhibition, Sookmyung Women’s University
+  location: Seoul, Korea
+  kind: exhibition
+- id: fail-puzzle
+  title: Fail Puzzle Display
+  period: Sep 2019
+  sort_date: 2019-09
+  role: Exhibitor
+  organization: 'Fail Expo: Experiencing Failure in Daejeon, Daejeon Convention Center'
+  location: Daejeon, Korea
+  kind: exhibition
+- id: science-donga
+  title: Move toward the Problems You Want to Solve
+  period: Apr 2026
+  sort_date: 2026-04
+  role: Media coverage
+  organization: Science Donga
+  kind: media
+- id: church-dilemma
+  title: 'When Neighborhood Churches, Cafés, and Restaurants Come Together: The Church
+    Dilemma'
+  period: Dec 2025
+  sort_date: 2025-12
+  role: Media coverage
+  organization: Kookmin Ilbo
+  kind: media
+- id: nocut-daejeon
+  title: 'Daejeon Instead of Seoul: A New Experiment by Young People Who Choose to
+    Stay'
+  period: Dec 2025
+  sort_date: 2025-12
+  role: Media coverage
+  organization: NoCut News
+  kind: media
+- id: kaist-profile
+  title: 'Eunji Woo: Between Local Researcher and Practitioner'
+  period: Apr 2023
+  sort_date: 2023-04
+  role: Media coverage
+  organization: ID KAIST
+  kind: media
+- id: hankyoreh-neighbors
+  title: Young Entrepreneurs Team Up with Neighbors in Daejeon’s Eoeun–Gungdong
+  period: Apr 2023
+  sort_date: 2023-04
+  role: Media coverage
+  organization: The Hankyoreh
+  kind: media
+- id: belocal-profile
+  title: 'Eunji Woo: Navigating between Local Researcher and Community Player'
+  period: Mar 2023
+  sort_date: 2023-03
+  role: Media coverage
+  organization: BeLocal
+  kind: media
+- id: mbc-neb
+  title: 'The “Neb” Habit at Work: Reading Social Cues'
+  period: Oct 2020
+  sort_date: 2020-10
+  role: Media coverage
+  organization: MBC
+  kind: media
+- id: chosun-dongdaemun
+  title: 'Making Dongdaemun a Better Place to Live: Korean and British Design Students
+    Join Forces'
+  period: Apr 2012
+  sort_date: 2012-04
+  role: Media coverage
+  organization: The Chosun Ilbo
+  kind: media

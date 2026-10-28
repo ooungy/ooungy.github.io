@@ -1,12 +1,13 @@
 ---
 title: Impact Framework for Community Activities in Youth Village
 period: Jan–Mar 2025
+theme: local-communities
+tags: []
 summary: An impact framework for community activities at “Yeogirang” in Daejeon.
 order: 2
 selected: false
 role: Project Manager
+organization: Daejeon Metropolitan City
 ---
 
-An impact framework for community activities at “Yeogirang” in Daejeon.
-
-Led the project as Project Manager. Commissioned by Daejeon Metropolitan City Hall, Daejeon City.
+Developed a community impact framework for Daejeon’s “Yeogirang” youth village.

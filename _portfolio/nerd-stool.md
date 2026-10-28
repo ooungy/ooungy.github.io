@@ -1,15 +1,14 @@
 ---
 title: Nerd Stool Project
-period: '2023'
-summary: A cross-sector collaboration designing stools that capture Daejeon’s scientific
-  identity.
+period: Jun–Dec 2023
+theme: local-communities
+tags:
+- entrepreneurship
+summary: Stool designs exploring Daejeon’s local identity.
 order: 3
 selected: true
 role: Project Manager
+organization: Daejeon Social Innovation Center, Local Branding Support Programme
 ---
 
-A cross-sector collaboration designing stools that capture Daejeon’s scientific identity.
-
-Planned and led a collaboration among 10 university students, 5 local researchers, a woodworking team, and local media.
-
-Selected for the Local Branding and Experimental Design Support Program by the Daejeon Center for Social Innovation.
+A stool-design project exploring the local identity of Daejeon.

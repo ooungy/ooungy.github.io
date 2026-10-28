@@ -4,12 +4,20 @@ eyebrow: Research in practice
 permalink: /projects/
 redirect_from:
 - /portfolio/
-description: Selected field-based collaborations, community initiatives, and design
-  interventions.
+description: Research and applied design work across communities, participatory technologies,
+  and entrepreneurship.
 ---
 
 
-<div class="project-list">
-{% assign projects = site.portfolio | sort: 'order' %}
-{% for project in projects %}{% include project-entry.html %}{% endfor %}
-</div>
+<nav class="personal-links" aria-label="Project themes">
+{% for theme in site.data.project_themes %}<a href="#{{ theme.key }}">{{ theme.title }}</a>{% endfor %}
+</nav>
+{% for theme in site.data.project_themes %}
+<section class="listing-section" aria-labelledby="{{ theme.key }}">
+  <h2 id="{{ theme.key }}">{{ theme.title }}</h2>
+  <div class="project-list">
+  {% assign projects = site.portfolio | where: 'theme', theme.key | sort: 'order' %}
+  {% for project in projects %}{% include project-entry.html %}{% endfor %}
+  </div>
+</section>
+{% endfor %}

@@ -1,11 +1,15 @@
 ---
 title: Hyperlocal Revitalization in Eoeundong
 period: 2024–2026
-summary: A neighborhood revitalization project in Eoeundong (슬기로운동네생활).
+theme: local-communities
+tags:
+- participatory-technology
+summary: Community programmes and service strategies for revitalizing local commercial
+  districts.
 order: 1
 selected: true
+organization: Ministry of the Interior and Safety, Regional Economic Revitalization
+  Programme
 ---
 
-A neighborhood revitalization project in Eoeundong (슬기로운동네생활).
-
-Commissioned by the Ministry of Public Administration and Security. A lab project at Designize Lab, KAIST.
+Developed six commercial-district revitalization programmes from the needs of residents and local creators, alongside UX/UI for a hyperlocal platform and design strategies for neighborhood hubs.

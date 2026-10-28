@@ -3,6 +3,8 @@ layout: academic
 ---
 <article class="detail-content">
   <p class="project-meta">{{ page.period }}{% if page.role %} · {{ page.role }}{% endif %}</p>
+  {% if page.organization %}<p class="publication-meta">{{ page.organization }}</p>{% endif %}
+  {% if page.theme %}<p class="publication-meta">{% for theme in site.data.project_themes %}{% if theme.key == page.theme %}<a href="{{ '/projects/' | relative_url }}#{{ theme.key }}">{{ theme.title }}</a>{% endif %}{% endfor %}{% for tag in page.tags %}{% for theme in site.data.project_themes %}{% if theme.key == tag %} · <a href="{{ '/projects/' | relative_url }}#{{ theme.key }}">{{ theme.title }}</a>{% endif %}{% endfor %}{% endfor %}</p>{% endif %}
   {% if page.image %}<figure><img class="project-image" src="{{ page.image | relative_url }}" alt="{{ page.image_alt | escape }}">{% if page.image_caption %}<figcaption>{{ page.image_caption }}</figcaption>{% endif %}</figure>{% endif %}
   {{ content }}
   {% for image in page.gallery %}

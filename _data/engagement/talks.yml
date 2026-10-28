@@ -1,0 +1,192 @@
+- id: kyunghee-ai-community
+  title: AI and Community Design
+  period: 16 Sep 2026
+  sort_date: '2026-09-16'
+  role: Invited speaker
+  organization: College of Art and Design Colloquium, Kyung Hee University
+  location: Online
+- id: tokyo-local-shops
+  title: Designing Technology-mediated Interactions for Local Shops
+  period: 10 Feb 2026
+  sort_date: '2026-02-10'
+  role: Invited speaker
+  organization: University of Tokyo
+  location: Japan
+- id: kyoto-local-shops
+  title: Designing Technology-mediated Interactions for Local Shops
+  period: 3 Feb 2026
+  sort_date: '2026-02-03'
+  role: Invited speaker
+  organization: Kyoto Institute of Technology
+  location: Japan
+- id: musashino-local-shops
+  title: Designing Technology-mediated Interactions for Local Shops
+  period: 2 Feb 2026
+  sort_date: '2026-02-02'
+  role: Invited speaker
+  organization: Musashino Art University
+  location: Japan
+- id: hallym-neighborhood
+  title: Designing Social Innovation from Neighborhood
+  period: 29 Apr 2025
+  sort_date: '2025-04-29'
+  role: Invited speaker
+  organization: Digital Arts and Humanities Colloquium, Hallym University
+  location: Chuncheon, Korea
+- id: york-neighborhood
+  title: Design for My Neighborhood
+  period: 12 May 2025
+  sort_date: '2025-05-12'
+  role: Invited speaker
+  organization: York University
+  location: Canada
+- id: knou-ai-double-diamond
+  title: AI-Based Double Diamond Design Process
+  period: 3 Dec 2024
+  sort_date: '2024-12-03'
+  role: Invited speaker
+  organization: Korea National Open University
+  location: Online
+- id: yonsei-social-innovation
+  title: Designing Social Innovation from Neighborhood
+  period: 14 May 2024
+  sort_date: '2024-05-14'
+  role: Invited speaker
+  organization: Culture and Design Management, Yonsei University
+  location: Incheon, Korea
+- id: ksds-community-anchors
+  title: Designing Community Anchors for Customer Engagement
+  period: 4 Oct 2023
+  sort_date: '2023-10-04'
+  role: Invited speaker
+  organization: SIG Symposium, Korean Society of Design Science Fall International
+    Conference
+  location: Sejong, Korea
+- id: kaist-speculative-design
+  title: Speculative Design for Community-Based Customer Experiences in Local Shops
+  period: 16 May 2023
+  sort_date: '2023-05-16'
+  role: Invited speaker
+  organization: Department of Industrial Design, KAIST
+  location: Daejeon, Korea
+- id: brunel-speculative
+  title: Speculative Design for Local Shops
+  period: 9 Dec 2022
+  sort_date: '2022-12-09'
+  role: Invited speaker
+  organization: Design School, Brunel University London
+  location: United Kingdom
+- id: ansan-community
+  title: Four Perspectives on Community
+  period: 25 Sep 2025
+  sort_date: '2025-09-25'
+  role: Invited speaker
+  organization: Ansan Community Building Support Center
+  location: Ansan, Korea
+- id: local-brand-forum
+  title: Community-Based Customer Experience Design for Local Shops
+  period: 5 Sep 2025
+  sort_date: '2025-09-05'
+  role: Invited speaker
+  organization: Local Meetup, Local Brand Forum
+  location: Gangneung, Korea
+- id: gsc-daejeon
+  title: Community-Building Practices in Daejeon
+  period: 23 Nov 2023
+  sort_date: '2023-11-23'
+  role: Invited speaker
+  organization: Daejeon Hub Global Shaping Forum, Global Shapers Community
+  location: Daejeon, Korea
+- id: chungwon-local-shops
+  title: How Local Shops Design Everyday Lifestyles
+  period: 11 Nov 2023
+  sort_date: '2023-11-11'
+  role: Invited speaker
+  organization: Local Branding Course, Chungwon High School
+  location: Chungju, Korea
+- id: urban-data
+  title: How Urban Data Shapes the Future of Local Communities
+  period: 30 Oct 2023
+  sort_date: '2023-10-30'
+  role: Invited speaker
+  organization: Daejeon Sejong Research Institute
+  location: Daejeon, Korea
+- id: koica-community
+  title: Community Designing
+  period: 26 Jul 2023
+  sort_date: '2023-07-26'
+  role: Invited speaker
+  organization: KOICA–Canaan Farmers School Rwanda Agricultural Productivity Training
+    Programme
+  location: Wonju, Korea
+- id: daejeon-youth
+  title: Making a Life through Community in Daejeon
+  period: 28 Jun 2023
+  sort_date: '2023-06-28'
+  role: Invited speaker
+  organization: Youth Community Activity Programme, Daejeon Youth Center
+  location: Daejeon, Korea
+- id: first-ecosystem-forum
+  title: Neighborhood as a Community of Creativity and Inspiration
+  period: 15 Jun 2023
+  sort_date: '2023-06-15'
+  role: Invited speaker
+  organization: First Eoeun–Gungdong Innovation Ecosystem Forum
+  location: Daejeon, Korea
+- id: chosun-community-anchors
+  title: Community Anchoring Strategies and Service Design for Local Shops
+  period: 30 Jan 2023
+  sort_date: '2023-01-30'
+  role: Invited speaker
+  organization: Industry Professional Education, Chosun University LINC 3.0
+  location: Gwangju, Korea
+- id: balanced-development
+  title: Service Design for Local Creators
+  period: 8 Oct 2020
+  sort_date: '2020-10-08'
+  role: Invited speaker
+  organization: Balanced Development Information Cooperation Forum, Presidential Committee
+    for Balanced National Development
+  location: Jeju, Korea
+- id: bee-startup
+  title: Designing Reciprocal Relationships between Local Shops and Communities
+  period: Apr 2019
+  sort_date: 2019-04
+  role: Invited speaker
+  organization: Yuseong Bee-Startup Academy
+  location: Daejeon, Korea
+- id: tec-design-thinking
+  title: Introduction to Design Thinking
+  period: Jan 2019
+  sort_date: 2019-01
+  role: Invited speaker
+  organization: Yuseong TEC Entrepreneurship Cluster Academy
+  location: Daejeon, Korea
+- id: changeon-local-districts
+  title: How Can Design Support Sustainable Revitalization of Local Commercial Districts?
+  period: Oct 2018
+  sort_date: 2018-10
+  role: Invited speaker
+  organization: ChangeOn@Birlzip
+  location: Daejeon, Korea
+- id: creator-society-panel
+  title: Creator Society Book-Launch Expert Roundtable
+  period: 7 Nov 2024
+  sort_date: '2024-11-07'
+  role: Panelist
+  organization: Expert Roundtable for the Book Creator Society
+  location: Seoul, Korea
+- id: second-ecosystem-panel
+  title: Second Eoeun–Gungdong Innovation Ecosystem Forum
+  period: 25 Jul 2023
+  sort_date: '2023-07-25'
+  role: Panelist
+  organization: Eoeun–Gungdong Innovation Ecosystem Forum
+  location: Daejeon, Korea
+- id: dcamp-panel
+  title: Regional Startup Ecosystem Panel
+  period: 19 Jul 2023
+  sort_date: '2023-07-19'
+  role: Panelist
+  organization: D.Camp
+  location: Jeju, Korea

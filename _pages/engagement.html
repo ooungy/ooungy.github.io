@@ -1,0 +1,31 @@
+---
+title: Engagement
+permalink: /engagement/
+description: Talks, advisory work, academic service, and contributions beyond the university.
+---
+
+<nav class="personal-links" aria-label="Engagement sections">
+{% for section in site.data.engagement_sections %}<a href="#{{ section.key }}">{{ section.title }}</a>{% endfor %}
+</nav>
+{% for section in site.data.engagement_sections %}
+<section class="listing-section" aria-labelledby="{{ section.key }}">
+  <h2 id="{{ section.key }}">{{ section.title }}</h2>
+  {% if section.key == 'exhibitions_media' %}
+    <h3>Exhibitions</h3>
+    <ul class="publication-list">
+    {% assign activities = site.data.engagement[section.key] | where: 'kind', 'exhibition' | sort: 'sort_date' | reverse %}
+    {% for activity in activities %}{% include engagement-entry.html %}{% endfor %}
+    </ul>
+    <h3>Selected media</h3>
+    <ul class="publication-list">
+    {% assign activities = site.data.engagement[section.key] | where: 'kind', 'media' | sort: 'sort_date' | reverse %}
+    {% for activity in activities %}{% include engagement-entry.html %}{% endfor %}
+    </ul>
+  {% else %}
+    <ul class="publication-list">
+    {% assign activities = site.data.engagement[section.key] | sort: 'sort_date' | reverse %}
+    {% for activity in activities %}{% include engagement-entry.html %}{% endfor %}
+    </ul>
+  {% endif %}
+</section>
+{% endfor %}

@@ -1,15 +1,16 @@
 ---
 title: Speculative Design for Innovative Local Shops
-period: '2022'
-summary: Exploring community-anchored customer experiences through speculative design
-  intervention.
+period: Jan–Dec 2022
+theme: participatory-technology
+tags:
+- local-communities
+- entrepreneurship
+summary: Public-display-based design interventions for customer interactions in local
+  shops.
 order: 6
 selected: false
 role: Project Manager
+organization: KAIST College of Engineering, Global Initiative Programme
 ---
 
-Exploring community-anchored customer experiences through speculative design intervention.
-
-Led the project as Project Manager in collaboration with the Design School at Brunel University London.
-
-Selected for the Global Initiative Research Collaboration Program by the College of Engineering, KAIST.
+Proposed public-display-based speculative design interventions to explore face-to-face customer interactions in local shops.

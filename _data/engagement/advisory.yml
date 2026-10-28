@@ -1,0 +1,36 @@
+- id: population-policy
+  title: Daejeon Population Policy Committee
+  period: 2026–2028
+  sort_date: '2026'
+  role: Advisory committee member
+  organization: Daejeon Metropolitan City
+- id: boeun-local-branding
+  title: Local Branding Revitalization Programme
+  period: 2025–2026
+  sort_date: '2025'
+  role: Advisor
+  organization: Boeun County
+- id: seo-social-economy
+  title: Seo District Social Economy Committee
+  period: 2024–2026
+  sort_date: '2024'
+  role: Advisory committee member
+  organization: Seo District, Daejeon
+- id: startup-ir-mentoring
+  title: Technology Startup Investor-Relations Mentoring
+  period: 2018–2025
+  sort_date: '2018'
+  role: Mentor
+  organization: KAIST Institute of Entrepreneurship
+- id: youth-village-mentoring
+  title: Youth Village Support Programme
+  period: '2025'
+  sort_date: '2025'
+  role: Mentor
+  organization: Ministry of the Interior and Safety
+- id: local-creator-mentoring
+  title: Local Creator Support Programme
+  period: '2023'
+  sort_date: '2023'
+  role: Mentor
+  organization: Daejeon Center for Creative Economy and Innovation
